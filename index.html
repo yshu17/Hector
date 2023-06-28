@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hector</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+      defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+   <script src="js/main.min.js" defer></script>
+</head>
+
+<body>
+   <header class="header">
+      <div class="container-fluid">
+         <nav class="navbar d-flex justify-content-center navbar-expand-lg fixed-top">
+            <div class="px-4 py-2 m-0 w-100">
+               <div class="offcanvas offcanvas-top d-block px-4" tabindex="1" id="offcanvasDarkNavbar"
+                  aria-labelledby="navbar">
+                  <div class="offcanvas-header">
+                     <a class="offcanvas-brand logo-link" href="#">
+                        <img src="img/dist/logo.webp" alt="logo">
+                     </a>
+                     <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close"> <i class="bi bi-list"></i>
+                     </button>
+                  </div>
+                  <div class="offcanvas-body d-flex justify-content-between align-items-center">
+                     <ul class="navbar-nav d-flex flex-wrap text-uppercase align-items-center main-menu">
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle serch-link p-3" href="#" role="button"
+                              data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                              Каталог
+                           </a>
+                           <div class="dropdown-menu dropdown-menu-start px-2 w-100 h-100">
+
+                           </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="sale.html">sale</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="opt.html">опт</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="about.html">о нас</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="review.html">отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="order.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link p-3" aria-current="page" href="countacts.html">Контакты</a>
+                        </li>
+                     </ul>
+                     <a class="navbar-brand logo-link text-center m-0 main-logo" href="#">
+                        <div class="center-logo">
+                           <img src="img/dist/logo.webp" alt="logo">
+                        </div>
+                     </a>
+                     <ul class="navbar-nav d-flex align-items-center gap-4 main-icons">
+                        <li class="nav-item">
+                           <a class="nav-link px-3 p-0" aria-current="page" href="#"><i
+                                 class="bi bi-search fs-4"></i></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link px-3 p-0" aria-current="page" href="#"><i
+                                 class="bi bi-heart fs-4"></i></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link px-3 p-0" aria-current="page" href="#"><i
+                                 class="bi bi-basket3 fs-4"></i></a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link px-3 p-0" aria-current="page" href="#"><i
+                                 class="bi bi-person fs-3"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <a class="navbar-toggler navbar-brand logo-link" href="#">
+                  <img src="img/dist/logo.webp" alt="logo">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Y-Y-togglerBtn">
+                  <i class="bi bi-list"></i>
+               </button>
+            </div>
+         </nav>
+         <section class="hero" id="hero">
+            <div class="swiper mySwiper h-100 mb-4">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="siledr__img" src="img/dist/heroimg.webp"
+                        alt="Главное изображение слайдера 1"></div>
+                  <div class="swiper-slide"><img class="siledr__img" src="img/dist/heroimg.webp"
+                        alt="Главное изображение слайдера 2"></div>
+                  <div class="swiper-slide"><img class="siledr__img" src="img/dist/heroimg.webp"
+                        alt="Главное изображение слайдера 3"></div>
+               </div>
+               <div class="swiper-pagination"></div>
+            </div>
+            <div class="description">
+               <h1 class="text-uppercase mb-3">Мужская коллекция</h1>
+               <h4 class="mb-5">Распродажа коллекций со скидками до 50%, доставка до вашего склада</h4>
+               <a href="#" class="text-uppercase more-link">Подробнее</a>
+            </div>
+         </section>
+   </header>
+   </div>
+   <main>
+      <div class="container-fluid">
+         <section class="stock w-100">
+            <div class="row w-100">
+               <div class="col d-flex px-5">
+                  <img src="img/dist/stock-1.webp" alt="stock-img">
+                  <div class="">
+                     <h3>Акции- Новая серия</h3>
+                     <span>Мужские футболки с модными принтами в стиле Хайтек</span>
+                  </div>
+               </div>
+               <div class="col d-flex px-5">
+                  <img src="img/dist/stock-2.webp" alt="stock-img">
+                  <div class="">
+                     <h3>Успей до 10.04</h3>
+                     <span>Распродажа со скидками до 50%. Мужские футболки всех размеров.</span>
+                  </div>
+               </div>
+               <div class="col d-flex px-5">
+                  <img src="img/dist/stock-3.webp" alt="stock-img">
+                  <div class="">
+                     <h3>Скидки до 45%</h3>
+                     <span>На все футболки серии Лето 2019 при заказе от 2000 грн.</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="cards w-100">
+            <div class="cards-filters d-flex justify-content-center w-50 m-auto mb-4">
+               <div class="btn-group justify-content-center w-100" role="group"
+                  aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                  <label class="btn btn-outline-dark" for="btnradio1">Новинки</label>
+
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="btnradio2">ТОП продаж</label>
+
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="btnradio3">Скидки</label>
+               </div>
+            </div>
+
+            <ul class="list-unstyled row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-5 mb-5 card-list">
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+               <li class="col px-4 card-item">
+                  <div class="triangle text-uppercase"></div>
+                  <a href="#"><img src="../img/dist/heroimg.webp" class="card-img-top mb-3" alt="..."></a>
+                  <div class="card-body pb-2">
+                     <div class="d-flex justify-content-between align-content-center">
+                        <div class="rating">
+                           <input type="radio" id="star5" name="rating" value="5" />
+                           <label for="star5"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star4" name="rating" value="4" />
+                           <label for="star4"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star3" name="rating" value="3" />
+                           <label for="star3"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star2" name="rating" value="2" />
+                           <label for="star2"><i class="bi bi-star-fill"></i></label>
+                           <input type="radio" id="star1" name="rating" value="1" />
+                           <label for="star1"><i class="bi bi-star-fill"></i></label>
+                        </div>
+                        <ul class="list-unstyled d-flex gap-1 size-list">
+                           <li class="text-muted ">M</li>
+                           <li class="text-muted ">L</li>
+                           <li class="text-muted ">XL</li>
+                        </ul>
+                     </div>
+                     <p class="card-text mb-3">Футболка мужская Exclusive 22032
+                     </p>
+                     <h5 class="card-price">245₴</h5>
+                  </div>
+               </li>
+
+            </ul>
+            <div class="d-flex justify-content-center align-items-center">
+               <a href="#" class="text-uppercase more-link">Посмотреть каталог</a>
+            </div>
+         </section>
+         <section class="trends">
+            <div class="trends-filters d-flex justify-content-center w-50 m-auto mb-4">
+               <div class="btn-group justify-content-center w-100" role="group"
+                  aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+                  <label class="btn btn-outline-dark" for="btnradio4">Новости</label>
+
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                  <label class="btn btn-outline-dark" for="btnradio5">Отзывы</label>
+               </div>
+            </div>
+            <div class="trends-content gap-5 row w-100 justify-content-center m-0 mb-5">
+               <div class="col-5 card d-flex flex-column justify-content-center align-items-center  px-5"
+                  style="background-image: url('img/dist/trends-bg-img.webp');">
+                  <div class="wrapper d-flex flex-column justify-content-center align-items-center text-center">
+                     <h2 class="mb-4">Тренды мужской одежды 2020</h2>
+                     <span class="mb-4">Распродажа коллекций со скидками до 50%,
+                        доставка до вашего склада</span>
+                     <div class="d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-uppercase read-link">Читать</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-5 card d-flex flex-column justify-content-center align-items-center  px-5"
+                  style="background-image: url('img/dist/trends-bg-img.webp');">
+                  <div class="wrapper d-flex flex-column justify-content-center align-items-center text-center">
+                     <h2 class="mb-4">Тренды мужской одежды 2020</h2>
+                     <span class="mb-4">Распродажа коллекций со скидками до 50%,
+                        доставка до вашего склада</span>
+                     <div class="d-flex justify-content-center align-items-center">
+                        <a href="#" class="text-uppercase read-link">Читать</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+               <a href="#" class="text-uppercase more-link">Больше новостей</a>
+            </div>
+
+         </section>
+         <section class="trends">
+
+         </section>
+      </div>
+   </main>
+</body>
+
+</html>
